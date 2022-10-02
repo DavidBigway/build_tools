@@ -1,0 +1,22 @@
+{
+  "name": "build_tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidBigway/build_tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidBigway/build_tools/issues"
+  },
+  "homepage": "https://github.com/DavidBigway/build_tools#readme",
+  "dependencies": {
+    "luxon": "^3.0.4"
+  }
+}
