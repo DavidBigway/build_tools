@@ -1,5 +1,5 @@
 export const dateCalcForm = document.getElementById('datecalc')
 export const dateCalcResult = document.getElementById('datecalc__result')
 export const switchBtn = document.querySelector('#switch')
-export const datecalc = document.querySelector('#datecalc')
 export const timerEl = document.querySelector('#timer')
+export const datecalc = document.querySelector('#datecalc')
