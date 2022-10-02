@@ -1,22 +1,6 @@
-import { dateCalcForm, dateCalcResult } from './consts.js'
-import { diffDates, diffToHtml } from './datecalc.js'
-import { formatError } from './utils.js'
+import { dateCalcForm, switchBtn } from './consts.js'
+import { handleCalcDates } from './dateCalc.js'
+import { switcher } from './switch.js'
 
 dateCalcForm.addEventListener('submit', handleCalcDates)
-
-function handleCalcDates(event) {
-  let { firstDate, secondDate } = event.target.elements
-  dateCalcResult.innerHTML = ''
-  event.preventDefault()
-
-  firstDate = firstDate.value
-  secondDate = secondDate.value
-
-  if (firstDate && secondDate) {
-    const diff = diffDates(firstDate, secondDate)
-    dateCalcResult.innerHTML = diffToHtml(diff)
-  } else
-    dateCalcResult.innerHTML = formatError(
-      'Для расчета промежутка необходимо заполнить оба поля'
-    )
-}
+switchBtn.addEventListener('click', switcher)

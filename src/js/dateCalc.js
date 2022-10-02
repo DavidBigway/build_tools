@@ -1,6 +1,25 @@
+import { dateCalcResult } from './consts.js'
 import { DateTime } from './luxon.js'
+import { formatError } from './utils.js'
 
-export function diffDates(firstDate, secondDate) {
+export function handleCalcDates(event) {
+  let { firstDate, secondDate } = event.target.elements
+  dateCalcResult.innerHTML = ''
+  event.preventDefault()
+
+  firstDate = firstDate.value
+  secondDate = secondDate.value
+
+  if (firstDate && secondDate) {
+    const diff = diffDates(firstDate, secondDate)
+    dateCalcResult.innerHTML = diffToHtml(diff)
+  } else
+    dateCalcResult.innerHTML = formatError(
+      'Для расчета промежутка необходимо заполнить оба поля'
+    )
+}
+
+function diffDates(firstDate, secondDate) {
   firstDate = DateTime.fromISO(firstDate)
   secondDate = DateTime.fromISO(secondDate)
   if (firstDate > secondDate)
@@ -8,7 +27,7 @@ export function diffDates(firstDate, secondDate) {
   return secondDate.diff(firstDate, ['years', 'months', 'days']).toObject()
 }
 
-export const diffToHtml = (diff) => `
+const diffToHtml = (diff) => `
     <span>
         ${diff.years ? 'Лет: ' + diff.years : ''}
         ${diff.months ? 'Месяцев: ' + diff.months : ''}
