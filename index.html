@@ -29,7 +29,17 @@
         <p id="datecalc__result"></p>
       </form>
 
-      <div id="timer" class="hide"></div>
+      <div id="timer" class="hide">
+        <audio id="clock_audio">
+          <source src="/src/audio/clock.wav" type="audio/wav" />
+        </audio>
+        <label for="timerCount">Задать время</label>
+        <input id="timerCount" type="number" value="0" />
+        <button id="set">Set</button>
+        <p id="timerCount__result">0</p>
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+      </div>
     </div>
   </body>
 </html>
