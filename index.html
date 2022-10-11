@@ -8,7 +8,7 @@
     <script defer type="module" src="src/js/main.js"></script>
     <style>
       .hide {
-        display: none;
+        display: none !important;
       }
     </style>
   </head>
@@ -29,7 +29,17 @@
         <p id="datecalc__result"></p>
       </form>
 
-      <div id="timer" class="hide">
+      <div
+        id="timer"
+        class="hide"
+        style="display: inline-flex; flex-direction: column"
+      >
+        <img
+          src="/src/image/clock.gif"
+          alt="clock"
+          height="60px"
+          width="60px"
+        />
         <audio id="clock_audio">
           <source src="/src/audio/clock.wav" type="audio/wav" />
         </audio>
