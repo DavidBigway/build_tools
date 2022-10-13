@@ -1,0 +1,38 @@
+[
+  {
+    "title": "JS",
+    "content": "https://media.tproger.ru/uploads/2021/05/icon-js-cover.png"
+  },
+  {
+    "title": "Car BMW",
+    "content": "https://ksonline.ru/wp-content/uploads/2022/03/BMWBARS.jpg"
+  },
+  {
+    "title": "Minions",
+    "content": "https://telecomdom.com/wp-content/uploads/2020/02/kartinki-na-telefon-5-576x1024.jpg"
+  },
+  {
+    "title": "Monkey",
+    "content": "src/image/monkey.png"
+  },
+  {
+    "title": "Пёсик",
+    "content": "src/image/doggy.gif"
+  },
+  {
+    "title": "Городской пейзаж",
+    "content": "https://pic.pikbest.com/19/79/43/36R888piCxDw.mp4_10s.mp4"
+  },
+  {
+    "title": "Летний солнечный день парк",
+    "content": "https://pic.pikbest.com/19/76/17/45p888piCMmb.mp4_10s.mp4"
+  },
+  {
+    "title": "Геннадий Рождественский, Большой симфонический оркестр Всесоюзного радио - Сюита No. 2 Пер Гюнт, соч. 55 II. Арабский танец",
+    "content": "src/audio/Rozhdestvenskii_Arabian_dance.mp3"
+  },
+  {
+    "title": "Г. фон Караян, Берлинский филармонический оркестр - Symphony #5 - III. Allegro (Remastered 2022)",
+    "content": "src/audio/Karayan_Berlin_Symphony5.mp3"
+  }
+]

@@ -1,0 +1,36 @@
+h1 {
+  font-size: 100px;
+}
+#gallery {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  flex-grow: 1;
+  max-width: calc((1140px - 120px) / 3);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin: auto;
+  margin-bottom: 32px;
+  img,
+  video {
+    width: calc((1140px - 120px) / 3);
+    height: 200px;
+    object-fit: cover;
+  }
+  h5 {
+    margin: 0;
+    text-align: center;
+  }
+}
+.audio-card {
+  .audio-box {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f3f4;
+  }
+}
