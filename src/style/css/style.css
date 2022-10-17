@@ -1,0 +1,38 @@
+h1 {
+  font-size: 100px;
+}
+
+#gallery {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex-grow: 1;
+  max-width: 340px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin: auto;
+  margin-bottom: 32px;
+}
+.card img,
+.card video {
+  width: 340px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card h5 {
+  margin: 0;
+  text-align: center;
+}
+
+.audio-card .audio-box {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f3f4;
+}/*# sourceMappingURL=style.css.map */
